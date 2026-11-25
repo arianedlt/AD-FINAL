@@ -1,0 +1,131 @@
+.sales-form-container {
+  max-width: 750px;
+  padding: 35px;
+  background: #ffffff;
+  border: 1px solid #dce7d9;
+  border-top: 4px solid #d9bd59;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(33, 78, 53, 0.07);
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.sales-form-container:hover {
+  box-shadow: 0 13px 35px rgba(33, 78, 53, 0.11);
+}
+
+.sales-form-header {
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #edf0e9;
+}
+
+.sales-form-header h2 {
+  color: #214e35;
+  font-family: Georgia, serif;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.sales-form-header p {
+  margin-top: 8px;
+  color: #899489;
+  font-size: 14px;
+}
+
+.sales-form .form-group {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.sales-form label {
+  margin-bottom: 9px;
+  color: #31563d;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.sales-form input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dce6d9;
+  border-radius: 9px;
+  background: #fafcf9;
+  color: #344b3a;
+  font-family: "Segoe UI", Arial, sans-serif;
+  transition: 0.25s ease;
+}
+
+.sales-form input:hover {
+  border-color: #a6bda5;
+}
+
+.sales-form input:focus {
+  border-color: #547b5d;
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(84, 123, 93, 0.10);
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+}
+
+.total-preview {
+  padding: 23px;
+  margin: 12px 0 23px;
+  border: 1px solid #e3e9d5;
+  border-left: 5px solid #d9bd59;
+  border-radius: 11px;
+  background: linear-gradient(120deg, #edf4e9, #f8f5df);
+}
+
+.total-preview span {
+  color: #6c806c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.total-preview h2 {
+  margin-top: 8px;
+  color: #214e35;
+  font-family: Georgia, serif;
+  font-size: 29px;
+}
+
+.save-sale-btn {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #214e35;
+  border-radius: 9px;
+  background: #214e35;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.save-sale-btn:hover {
+  transform: translateY(-2px);
+  border-color: #d9bd59;
+  background: #d9bd59;
+  color: #214e35;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .sales-form-container {
+    padding: 23px;
+  }
+}
