@@ -1,0 +1,309 @@
+/* 1. Page layout */
+.profit-simulator {
+  display: flex;
+  min-height: 100vh;
+  background: #f3f4ed;
+  color: #214e35;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* 2. Sidebar */
+.profit-simulator .profit-sidebar {
+  width: 245px;
+  min-height: 100vh;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background: #214e35;
+}
+.profit-sidebar h2 {
+  margin: 0 0 45px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.profit-sidebar .brand-kita {
+  color: #ffffff;
+}
+
+.profit-sidebar .brand-wise {
+  color: #f4c542;
+}
+.profit-menu-label {
+  margin-bottom: 15px;
+  color: #a9c5ae;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.profit-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profit-sidebar nav a {
+  padding: 13px 16px;
+  border-radius: 8px;
+  color: #dce8dd;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.profit-sidebar nav a:hover {
+  padding-left: 21px;
+  background: #376749;
+  color: #fff;
+}
+.profit-sidebar nav a.active {
+  background: #e4eee1;
+  color: #214e35;
+  font-weight: 700;
+}
+
+/* 3. Main content and header */
+.profit-main {
+  flex: 1;
+  min-width: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+.profit-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #dce5d8;
+}
+.profit-header h1 {
+  margin: 0;
+  color: #214e35;
+  font-size: 30px;
+}
+.profit-header p {
+  margin-top: 9px;
+  color: #849084;
+  font-size: 14px;
+}
+
+/* 4. Form and result layout */
+.profit-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 25px;
+}
+
+/* 5. Formula guide */
+.profit-formula {
+  padding: 25px 30px;
+  margin-top: 30px;
+  border: 1px solid #e2e9df;
+  border-left: 5px solid #38734d;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(33, 78, 53, 0.05);
+}
+.profit-formula h2 {
+  margin: 0 0 18px;
+  color: #214e35;
+  font-size: 17px;
+}
+.formula-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0eb;
+}
+.formula-item:last-child {
+  border-bottom: 0;
+}
+.formula-item strong {
+  color: #214e35;
+  font-size: 13px;
+}
+.formula-item p {
+  margin: 7px 0 0;
+  color: #7b877b;
+  font-size: 13px;
+}
+
+/* 6. Responsive layout */
+
+
+
+
+/* 7. Profit calculation form */
+.profit-simulator .profit-form-card {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #e2e9df;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(33, 78, 53, 0.06);
+}
+.profit-simulator .profit-form-card h2 {
+  margin: 0;
+  color: #214e35;
+  font-size: 21px;
+}
+.profit-simulator .profit-form-card .profit-description,
+.profit-simulator .profit-result-card .profit-description {
+  margin: 9px 0 25px;
+  color: #929b91;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* 8. Form input fields */
+.profit-simulator .profit-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.profit-simulator .profit-input-group label {
+  margin-bottom: 9px;
+  color: #405b46;
+  font-size: 13px;
+  font-weight: 650;
+}
+.profit-simulator .profit-input-group input {
+  width: 100%;
+  padding: 13px 14px;
+  box-sizing: border-box;
+  border: 1px solid #dce5d8;
+  border-radius: 8px;
+  outline: none;
+  background: #fafbf8;
+  color: #214e35;
+  font-size: 13px;
+}
+.profit-simulator .profit-input-group input:focus {
+  border-color: #38734d;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(56, 115, 77, 0.10);
+}
+
+/* 9. Reset button */
+.profit-simulator .profit-form-card .reset-btn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 8px;
+  background: #214e35;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.profit-simulator .profit-form-card .reset-btn:hover {
+  transform: translateY(-2px);
+  background: #38734d;
+}
+
+/* 10. Profit result card */
+.profit-simulator .profit-result-card {
+  min-width: 0;
+  padding: 30px;
+  border: 1px solid #e2e9df;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(33, 78, 53, 0.06);
+}
+.profit-simulator .profit-result-card h2 {
+  margin: 0;
+  color: #214e35;
+  font-size: 21px;
+}
+
+/* 11. Result rows */
+.profit-simulator .profit-result-card .result-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 17px 0;
+  border-bottom: 1px solid #edf0eb;
+}
+.profit-simulator .profit-result-card .result-item span {
+  color: #7e897e;
+  font-size: 13px;
+}
+.profit-simulator .profit-result-card .result-item strong {
+  color: #214e35;
+  font-size: 14px;
+  text-align: right;
+}
+
+/* 12. Profit amount and message */
+.profit-simulator .profit-result-card .profit-highlight {
+  padding: 22px;
+  margin: 25px 0;
+  border-left: 5px solid #38734d;
+  border-radius: 9px;
+  background: #eaf2e7;
+}
+.profit-simulator .profit-result-card .profit-highlight p {
+  margin: 0 0 10px;
+  color: #66806a;
+  font-size: 13px;
+  font-weight: 600;
+}
+.profit-simulator .profit-result-card .profit-highlight h3 {
+  margin: 0;
+  color: #287044;
+  font-size: 30px;
+  overflow-wrap: anywhere;
+}
+.profit-simulator .profit-result-card .profit-highlight h3.negative-profit {
+  color: #c0392b;
+}
+.profit-simulator .profit-result-card .profit-message {
+  padding: 14px;
+  margin-top: 22px;
+  border-radius: 8px;
+  background: #f5f7f1;
+  color: #527057;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* 13. Small-screen card spacing */
+
+/* 13. Small-screen layout */
+@media (max-width: 700px) {
+  .profit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profit-simulator {
+    flex-direction: column;
+  }
+
+  .profit-sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .profit-sidebar h2 {
+    margin-bottom: 20px;
+  }
+
+  .profit-sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .profit-main {
+    padding: 20px;
+  }
+
+  .profit-header h1 {
+    font-size: 25px;
+  }
+
+  .profit-simulator .profit-form-card,
+  .profit-simulator .profit-result-card {
+    padding: 22px;
+  }
+}
